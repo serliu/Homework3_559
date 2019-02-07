@@ -1,0 +1,1129 @@
+$comment
+	File created using the following command:
+		vcd file Homework2_CRC.msim.vcd -direction
+$end
+$date
+	Wed Jan 30 18:25:35 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Homework2_CRC_b_vlg_vec_tst $end
+$var reg 1 ! clock $end
+$var reg 1 " compute_enable $end
+$var reg 1 # init $end
+$var reg 1 $ reset $end
+$var reg 8 % u8 [7:0] $end
+$var wire 1 & crc_out [15] $end
+$var wire 1 ' crc_out [14] $end
+$var wire 1 ( crc_out [13] $end
+$var wire 1 ) crc_out [12] $end
+$var wire 1 * crc_out [11] $end
+$var wire 1 + crc_out [10] $end
+$var wire 1 , crc_out [9] $end
+$var wire 1 - crc_out [8] $end
+$var wire 1 . crc_out [7] $end
+$var wire 1 / crc_out [6] $end
+$var wire 1 0 crc_out [5] $end
+$var wire 1 1 crc_out [4] $end
+$var wire 1 2 crc_out [3] $end
+$var wire 1 3 crc_out [2] $end
+$var wire 1 4 crc_out [1] $end
+$var wire 1 5 crc_out [0] $end
+
+$scope module i1 $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 8 unknown $end
+$var tri1 1 9 devclrn $end
+$var tri1 1 : devpor $end
+$var tri1 1 ; devoe $end
+$var wire 1 < crc_out[0]~output_o $end
+$var wire 1 = crc_out[1]~output_o $end
+$var wire 1 > crc_out[2]~output_o $end
+$var wire 1 ? crc_out[3]~output_o $end
+$var wire 1 @ crc_out[4]~output_o $end
+$var wire 1 A crc_out[5]~output_o $end
+$var wire 1 B crc_out[6]~output_o $end
+$var wire 1 C crc_out[7]~output_o $end
+$var wire 1 D crc_out[8]~output_o $end
+$var wire 1 E crc_out[9]~output_o $end
+$var wire 1 F crc_out[10]~output_o $end
+$var wire 1 G crc_out[11]~output_o $end
+$var wire 1 H crc_out[12]~output_o $end
+$var wire 1 I crc_out[13]~output_o $end
+$var wire 1 J crc_out[14]~output_o $end
+$var wire 1 K crc_out[15]~output_o $end
+$var wire 1 L clock~input_o $end
+$var wire 1 M clock~inputclkctrl_outclk $end
+$var wire 1 N u8[4]~input_o $end
+$var wire 1 O init~input_o $end
+$var wire 1 P reg16|LPM_SHIFTREG_component|_~6_combout $end
+$var wire 1 Q reset~input_o $end
+$var wire 1 R reset~inputclkctrl_outclk $end
+$var wire 1 S compute_enable~input_o $end
+$var wire 1 T clock_enable~combout $end
+$var wire 1 U u8[2]~input_o $end
+$var wire 1 V u8[5]~input_o $end
+$var wire 1 W reg16|LPM_SHIFTREG_component|_~7_combout $end
+$var wire 1 X reg16|LPM_SHIFTREG_component|_~3_combout $end
+$var wire 1 Y reg16|LPM_SHIFTREG_component|_~10_combout $end
+$var wire 1 Z u8[1]~input_o $end
+$var wire 1 [ Q_next[1]~1_combout $end
+$var wire 1 \ reg16|LPM_SHIFTREG_component|_~14_combout $end
+$var wire 1 ] reg16|LPM_SHIFTREG_component|_~4_combout $end
+$var wire 1 ^ reg16|LPM_SHIFTREG_component|_~11_combout $end
+$var wire 1 _ u8[6]~input_o $end
+$var wire 1 ` reg16|LPM_SHIFTREG_component|_~8_combout $end
+$var wire 1 a reg16|LPM_SHIFTREG_component|_~15_combout $end
+$var wire 1 b Q_next[2]~2_combout $end
+$var wire 1 c u8[7]~input_o $end
+$var wire 1 d reg16|LPM_SHIFTREG_component|_~17_combout $end
+$var wire 1 e reg16|LPM_SHIFTREG_component|_~5_combout $end
+$var wire 1 f reg16|LPM_SHIFTREG_component|_~12_combout $end
+$var wire 1 g u8[3]~input_o $end
+$var wire 1 h Q_next[15]~3_combout $end
+$var wire 1 i reg16|LPM_SHIFTREG_component|_~16_combout $end
+$var wire 1 j reg16|LPM_SHIFTREG_component|_~13_combout $end
+$var wire 1 k u8[0]~input_o $end
+$var wire 1 l reg16|LPM_SHIFTREG_component|_~9_combout $end
+$var wire 1 m Q_next[0]~0_combout $end
+$var wire 1 n reg16|LPM_SHIFTREG_component|_~2_combout $end
+$var wire 1 o reg16|LPM_SHIFTREG_component|dffs [15] $end
+$var wire 1 p reg16|LPM_SHIFTREG_component|dffs [14] $end
+$var wire 1 q reg16|LPM_SHIFTREG_component|dffs [13] $end
+$var wire 1 r reg16|LPM_SHIFTREG_component|dffs [12] $end
+$var wire 1 s reg16|LPM_SHIFTREG_component|dffs [11] $end
+$var wire 1 t reg16|LPM_SHIFTREG_component|dffs [10] $end
+$var wire 1 u reg16|LPM_SHIFTREG_component|dffs [9] $end
+$var wire 1 v reg16|LPM_SHIFTREG_component|dffs [8] $end
+$var wire 1 w reg16|LPM_SHIFTREG_component|dffs [7] $end
+$var wire 1 x reg16|LPM_SHIFTREG_component|dffs [6] $end
+$var wire 1 y reg16|LPM_SHIFTREG_component|dffs [5] $end
+$var wire 1 z reg16|LPM_SHIFTREG_component|dffs [4] $end
+$var wire 1 { reg16|LPM_SHIFTREG_component|dffs [3] $end
+$var wire 1 | reg16|LPM_SHIFTREG_component|dffs [2] $end
+$var wire 1 } reg16|LPM_SHIFTREG_component|dffs [1] $end
+$var wire 1 ~ reg16|LPM_SHIFTREG_component|dffs [0] $end
+$var wire 1 !! u [7] $end
+$var wire 1 "! u [6] $end
+$var wire 1 #! u [5] $end
+$var wire 1 $! u [4] $end
+$var wire 1 %! u [3] $end
+$var wire 1 &! u [2] $end
+$var wire 1 '! u [1] $end
+$var wire 1 (! u [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+1#
+0$
+b0 %
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+06
+17
+x8
+19
+1:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+1O
+1P
+0Q
+0R
+1S
+1T
+0U
+0V
+1W
+1X
+1Y
+0Z
+0[
+1\
+1]
+1^
+0_
+1`
+1a
+0b
+0c
+1d
+1e
+1f
+0g
+0h
+1i
+1j
+0k
+1l
+0m
+1n
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+z(!
+z'!
+z&!
+z%!
+z$!
+z#!
+z"!
+0!!
+$end
+#10000
+1!
+1L
+1M
+1~
+1v
+1r
+1o
+1s
+1{
+1w
+1p
+1x
+1t
+1|
+1q
+1u
+1}
+1y
+1z
+1@
+1A
+1=
+1E
+1I
+1>
+1F
+1B
+1J
+1C
+1?
+1G
+1K
+1H
+1D
+1<
+1!!
+15
+1-
+1)
+1&
+1*
+12
+1.
+1'
+1/
+1+
+13
+1(
+1,
+14
+10
+11
+#20000
+0!
+0L
+0M
+#30000
+1!
+1L
+1M
+#40000
+0#
+b10000000 %
+b11000000 %
+b11100000 %
+b11110000 %
+0!
+0O
+1N
+1V
+1_
+1c
+0L
+0M
+1m
+1[
+1b
+0!!
+1h
+0n
+0j
+0e
+0d
+0`
+0]
+0X
+0W
+0P
+1n
+1W
+1`
+0\
+1X
+1d
+0a
+1]
+1e
+0l
+0i
+#50000
+1!
+1L
+1M
+0v
+0r
+0o
+0p
+0q
+0z
+0@
+0I
+0J
+0K
+0H
+0D
+1!!
+0h
+0b
+0[
+0-
+0)
+0&
+0'
+0(
+01
+0Y
+1P
+0d
+0f
+0`
+0^
+0W
+1j
+0j
+0e
+1l
+1i
+1d
+1a
+0]
+1`
+1\
+0X
+#60000
+b11111000 %
+b11111100 %
+b11111110 %
+b11111111 %
+0!
+1k
+1Z
+1U
+1g
+0L
+0M
+0m
+1[
+1b
+1h
+1e
+0n
+1j
+1W
+0`
+0\
+1X
+0d
+0a
+1]
+0l
+0i
+#70000
+1!
+1L
+1M
+0~
+1r
+0s
+0w
+0x
+0t
+0u
+1z
+1@
+0E
+0F
+0B
+0C
+0G
+1H
+0<
+1m
+0h
+0b
+0[
+05
+1)
+0*
+0.
+0/
+0+
+0,
+11
+1l
+1Y
+0P
+1i
+1a
+0e
+0j
+1n
+1j
+0W
+0l
+0i
+1d
+0a
+0]
+1`
+1\
+0X
+#80000
+0!
+0L
+0M
+#90000
+1!
+1L
+1M
+1~
+0{
+1w
+1x
+0|
+1q
+1u
+0}
+0y
+0z
+0@
+0A
+0=
+1E
+1I
+0>
+1B
+1C
+0?
+1<
+15
+02
+1.
+1/
+03
+1(
+1,
+04
+00
+01
+1l
+1f
+1i
+1a
+1W
+0Y
+0\
+0j
+#100000
+0!
+0L
+0M
+#110000
+1!
+1L
+1M
+1v
+0r
+1o
+1s
+1p
+0q
+0u
+1y
+1A
+0E
+0I
+1J
+1G
+1K
+0H
+1D
+0!!
+1b
+1-
+0)
+1&
+1*
+1'
+0(
+0,
+10
+1Y
+1P
+0d
+0f
+0`
+1^
+0W
+1\
+1j
+1e
+1d
+0a
+1]
+#120000
+0!
+0L
+0M
+#130000
+1!
+1L
+1M
+1r
+0s
+1{
+0p
+0x
+1t
+1|
+1q
+1u
+0y
+1z
+1@
+0A
+1E
+1I
+1>
+1F
+0B
+0J
+1?
+0G
+1H
+0m
+1h
+1)
+0*
+12
+0'
+0/
+1+
+13
+1(
+1,
+00
+11
+0Y
+0P
+1`
+1a
+0e
+1W
+0\
+0j
+0n
+1j
+0W
+0l
+0i
+#140000
+b11110111 %
+b11110011 %
+b11110001 %
+b11110000 %
+0!
+0k
+0Z
+0U
+0g
+0L
+0M
+1m
+1[
+0b
+0h
+1e
+1n
+0j
+1W
+0`
+1\
+1X
+0d
+0a
+0]
+1l
+1i
+#150000
+1!
+1L
+1M
+0r
+0w
+0|
+0u
+1}
+1y
+0z
+0@
+1A
+1=
+0E
+0>
+0C
+0H
+0m
+0[
+0)
+0.
+03
+0,
+14
+10
+01
+1P
+0i
+0^
+0\
+1j
+0n
+0j
+0W
+1`
+1\
+0X
+#160000
+b1110000 %
+b1010000 %
+b1010010 %
+0!
+1Z
+0V
+0c
+0L
+0M
+1!!
+1h
+1^
+1W
+1d
+1j
+0e
+0l
+1i
+#170000
+1!
+1L
+1M
+0~
+0v
+1r
+0{
+1w
+1x
+0}
+1z
+1@
+0=
+1B
+1C
+0?
+1H
+0D
+0<
+05
+0-
+1)
+02
+1.
+1/
+04
+11
+1l
+0P
+1f
+0i
+1a
+0j
+#180000
+b1011010 %
+b1011110 %
+b11011110 %
+b11011100 %
+0!
+0Z
+1U
+1g
+1c
+0L
+0M
+1[
+1b
+0!!
+1e
+0d
+0`
+0\
+1X
+1d
+0a
+1]
+1j
+0e
+#190000
+1!
+1L
+1M
+1v
+0o
+1s
+0x
+1|
+0q
+1}
+0z
+0@
+1=
+0I
+1>
+0B
+1G
+0K
+1D
+1m
+1!!
+0[
+1-
+0&
+1*
+0/
+13
+0(
+14
+01
+0d
+1a
+0W
+1Y
+0j
+1n
+1W
+1e
+1`
+1\
+0X
+#200000
+0"
+b10011100 %
+b10001100 %
+b10000100 %
+b10000000 %
+b0 %
+0!
+0S
+0U
+0g
+0N
+0_
+0c
+0L
+0M
+0T
+0m
+0!!
+0e
+0Y
+1P
+0f
+0`
+1d
+0n
+0W
+1e
+#210000
+1!
+1L
+1M
+#220000
+0!
+0L
+0M
+#230000
+1!
+1L
+1M
+#240000
+0!
+0L
+0M
+#250000
+1!
+1L
+1M
+#260000
+0!
+0L
+0M
+#270000
+1!
+1L
+1M
+#280000
+0!
+0L
+0M
+#290000
+1!
+1L
+1M
+#300000
+0!
+0L
+0M
+#310000
+1!
+1L
+1M
+#320000
+0!
+0L
+0M
+#330000
+1!
+1L
+1M
+#340000
+0!
+0L
+0M
+#350000
+1!
+1L
+1M
+#360000
+0!
+0L
+0M
+#370000
+1!
+1L
+1M
+#380000
+0!
+0L
+0M
+#390000
+1!
+1L
+1M
+#400000
+0!
+0L
+0M
+#410000
+1!
+1L
+1M
+#420000
+0!
+0L
+0M
+#430000
+1!
+1L
+1M
+#440000
+0!
+0L
+0M
+#450000
+1!
+1L
+1M
+#460000
+0!
+0L
+0M
+#470000
+1!
+1L
+1M
+#480000
+0!
+0L
+0M
+#490000
+1!
+1L
+1M
+#500000
+0!
+0L
+0M
+#510000
+1!
+1L
+1M
+#520000
+0!
+0L
+0M
+#530000
+1!
+1L
+1M
+#540000
+0!
+0L
+0M
+#550000
+1!
+1L
+1M
+#560000
+0!
+0L
+0M
+#570000
+1!
+1L
+1M
+#580000
+0!
+0L
+0M
+#590000
+1!
+1L
+1M
+#600000
+0!
+0L
+0M
+#610000
+1!
+1L
+1M
+#620000
+0!
+0L
+0M
+#630000
+1!
+1L
+1M
+#640000
+0!
+0L
+0M
+#650000
+1!
+1L
+1M
+#660000
+0!
+0L
+0M
+#670000
+1!
+1L
+1M
+#680000
+0!
+0L
+0M
+#690000
+1!
+1L
+1M
+#700000
+0!
+0L
+0M
+#710000
+1!
+1L
+1M
+#720000
+0!
+0L
+0M
+#730000
+1!
+1L
+1M
+#740000
+0!
+0L
+0M
+#750000
+1!
+1L
+1M
+#760000
+0!
+0L
+0M
+#770000
+1!
+1L
+1M
+#780000
+0!
+0L
+0M
+#790000
+1!
+1L
+1M
+#800000
+0!
+0L
+0M
+#810000
+1!
+1L
+1M
+#820000
+0!
+0L
+0M
+#830000
+1!
+1L
+1M
+#840000
+0!
+0L
+0M
+#850000
+1!
+1L
+1M
+#860000
+0!
+0L
+0M
+#870000
+1!
+1L
+1M
+#880000
+0!
+0L
+0M
+#890000
+1!
+1L
+1M
+#900000
+0!
+0L
+0M
+#910000
+1!
+1L
+1M
+#920000
+0!
+0L
+0M
+#930000
+1!
+1L
+1M
+#940000
+0!
+0L
+0M
+#950000
+1!
+1L
+1M
+#960000
+0!
+0L
+0M
+#970000
+1!
+1L
+1M
+#980000
+0!
+0L
+0M
+#990000
+1!
+1L
+1M
+#1000000

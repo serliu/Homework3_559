@@ -1,0 +1,29 @@
+module (reset, clock, init, compute_enable, u, crc_out ); 
+
+
+input reset, clock, init, compute_enable, u;
+output [15:0] crc_out; 
+
+wire clock_enable;
+wire [15:0] Q_next;
+assign clock_enable = compute_enabl || init; 
+
+Q_next[12] = crc_out[15] ^ crc_out[11] ^ u;
+Q_next[5] = crc_out[15] ^ crc_out[4] ^ u;
+Q_next[0] = crc_out[15] ^ u;
+
+
+
+crc16reg reg16(reset,
+	clock,
+	Q_next,
+	1'h1,
+	init,
+	crc_out);
+	
+	
+
+
+
+
+endmodule 
